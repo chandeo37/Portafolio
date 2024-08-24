@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <h1>LH <span> Developer</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proyectos.html" target="_blank">Proyectos</a></li>
+                <li><a href="Acerca.html">Acerca de mi</a></li>
+                <li><a href="#">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <!--Formulario de contacto-->
+    <main>
+        <div class="container mt-4 " >
+            <div class="row">
+                <div class="col-6">
+                    <form class="row g-3 needs-validation" id="frmDatos" novalidate>
+                        <h2>Formulario</h2>
+                        <div class="mb-2">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+                            <div class="valid-feedback">Campo Ok</div>
+                            <div class="invalid-feedback">Complete los datos</div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email"  placeholder="Introduce tu correo" required>
+                            <div class="valid-feedback">Campo Ok</div>
+                            <div class="invalid-feedback">Complete los datos</div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Introduce el mensaje" required></textarea>
+                            <div class="valid-feedback">Campo Ok</div>
+                            <div class="invalid-feedback">Complete los datos</div>
+                        </div>
+                        <button type="button" class="btn btn-primary mb-3" onclick="guardarDatos()" >Enviar</button>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h2 >Resumen</h2>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush mt-1">
+                          <li class="list-group-item"><p id="resumenNombre"></p></li>
+                          <li class="list-group-item"><p id="resumenCorreo"></p></li>
+                          <li class="list-group-item"><p id="resumenMensaje"></p></li>
+                        </ul>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+
+  </main>
+
+    
+    
+    <footer>    
+        <div class="container-fluid">
+            <div class="row p-5 pb-2 bg-dark text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3 ">LH <span> Developer</span></p>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Proyectos</p>
+                    <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="https://github.com/chandeo37">GitHub</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Acerca de mi</p>
+                    <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Acerca de mi</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Contacto</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                        
+                    </div>
+                    <div class="mb-2">
+                        <div class="mb-2">
+                            <a class="text-secondary text-decoration-none" href="https://www.linkedin.com/in/luishernandezchandeo/">Linkedin</a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12 pt-3">
+                    <p class="text-white text-center">Copyright -All rights reserved @ 2024</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./JS/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:grey;
+    width: 100%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+.nav-proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+
+}
+span{
+    color: #ea1538;
+    font-size: 25px;
+    font-weight: bold;
+}
+h1{
+    font-style: italic;
+}
+nav, h1{
+    color: white;
+    font-size: 40px;
+    
+    
+}
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    color: #ea1538;
+}
+
+img{
+    height: 450px;
+    width: 450px;
+    border-radius: 50px ;
+}
+
+#bajar{
+    padding: 160px;
+   
+    
+}
+
+
+body{
+    background-image: linear-gradient(white, grey);
+}
+#texto1{
+    color: #ea1538;
+}
+
+#texto2{
+    color: white;
+    font-style: italic;
+}
+/*portafolio*/
+#portafolio{
+    padding: 90px 0;
+    background: linear-gradient(white,grey)
+}
+#portafolio, h2{
+    padding-bottom: 50px;
+    
+}
+#portafolio-titulo{
+    text-align: center;
+}
+
+.portafolio-fila{
+    display: flex;
+}
+#portafolio-ancho{
+    height: 300px;
+    width: 300px;
+}
+.portafolio-fila-caja{
+    margin: 20px;
+    background: white;
+    box-shadow: 10px 10px 10px rgba(255,255,255, 0.3);
+}
+
+.portafolio-fila-caja p{
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    color: red;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.eduCap{
+    display: none;
+}
+.aboutCard1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.card-img-top {
+    width: 285px;
+    height: 95px;
+    object-fit: cover;
+}
+
+.imgAbout{
+    width: 320px;
+    height: 285px;
+}
+
+#nombre{
+    font-style: italic;
+   
+    margin-bottom: 40px;
+}
